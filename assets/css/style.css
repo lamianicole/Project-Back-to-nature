@@ -1,3 +1,366 @@
+@font-face {
+  font-family: "Urbanist-Black";
+  src: url("../fonts/Urbanist-Black.ttf");
+}
+@font-face {
+  font-family: "Urbanist-Bold";
+  src: url("../fonts/Urbanist-Bold.ttf");
+}
+@font-face {
+  font-family: "Urbanist-Regular";
+  src: url("../fonts/Urbanist-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Urbanist-Regular";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.1rem solid black;
+  border-radius: 3rem;
+  padding: 0.8rem;
+  width: 90vw;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  justify-content: space-between;
+  padding: 0 0.8rem 0 2.4rem;
+  font-size: 1.6rem;
+}
+nav a:hover {
+  font-family: "Urbanist-Bold";
+  text-decoration: underline;
+}
+
+.intro .img-wrapper {
+  background-image: url(../img/Div.Header.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 90vw;
+  height: 70rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 7.5rem;
+}
+.intro .img-wrapper .btn-container {
+  display: flex;
+  gap: 1.6rem;
+}
+.intro .img-wrapper .btn-container .intro-button {
+  display: flex;
+  justify-content: center;
+  width: 20rem;
+  height: 4rem;
+  border-radius: 3rem;
+  border: 0.1rem solid #000;
+  background: #FFF;
+  color: black;
+  box-shadow: -0.4rem -0.4rem 0 0 rgba(0, 0, 0, 0.25) inset;
+  gap: 2rem;
+}
+.intro .img-wrapper .btn-container .intro-button a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: space-around;
+  gap: 2.2rem;
+}
+.intro .img-wrapper .btn-container .intro-button a p {
+  color: black;
+  font-family: "Urbanist-Bold";
+  font-size: 1.2rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}
+.intro .img-wrapper .btn-container .button-white {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20rem;
+  height: 4rem;
+  border-radius: 3rem;
+  border: 0.1rem solid #000;
+  background: #A9CBA6;
+  box-shadow: -0.4rem -0.4rem 0 0 rgba(0, 0, 0, 0.25) inset;
+  gap: 2rem;
+}
+.intro .img-wrapper .btn-container .button-white a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2.2rem;
+}
+.intro .img-wrapper .btn-container .button-white a p {
+  color: white;
+  font-family: "Urbanist-Bold";
+  font-size: 1.2rem;
+}
+
+.camper-rent .motto {
+  width: 32vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.camper-rent .motto h2 {
+  text-align: center;
+  font-family: "Urbanist-Bold";
+  font-size: 3rem;
+  padding-bottom: 2.2rem;
+}
+.camper-rent .motto p {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.camper-rent {
+  background-image: url(../img/background-bulb-gruen.svg);
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: center;
+  background-size: contain;
+}
+
+.card-container {
+  display: flex;
+  width: 90vw;
+  gap: 1.6rem;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+.card-container .service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 17rem;
+  height: 24rem;
+  padding: 0.8rem 1rem 0.1rem 1rem;
+  border-radius: 1.5rem;
+  border: 0.1rem solid #000;
+  background: #FFF;
+  box-shadow: -0.5rem -0.5rem 0px 0px rgba(0, 0, 0, 0.25) inset;
+  opacity: 0.7;
+}
+.card-container .service-card img {
+  width: 18rem;
+  height: 12rem;
+}
+.card-container .service-card h3 {
+  text-align: center;
+  font-family: "Urbanist-Bold";
+  font-size: 1.3rem;
+  width: 7.5rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+}
+.card-container .service-card p {
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  width: 9rem;
+  height: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+.button-search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.button-search-container .button-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20rem;
+  height: 4rem;
+  border-radius: 3rem;
+  border: 0.1rem solid #000;
+  background: #A9CBA6;
+  box-shadow: -0.4rem -0.4rem 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+.button-search-container .button-search a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-right: 2.2rem;
+}
+.button-search-container .button-search a p {
+  color: white;
+  font-family: "Urbanist-Bold";
+  font-size: 1.2rem;
+}
+
+.selection {
+  background-image: url(../img/background-bulb-blau.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-bottom: 1px solid black;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 4rem;
+}
+.selection .motto {
+  width: 27vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.selection .motto h2 {
+  text-align: center;
+  font-family: "Urbanist-Bold";
+  font-size: 3rem;
+  padding-bottom: 1.2rem;
+}
+.selection .motto p {
+  text-align: center;
+  font-size: 1.4rem;
+}
+.selection .selection-card-container {
+  display: flex;
+  width: 85vw;
+  gap: 2.3rem;
+  justify-content: center;
+  margin: 0 auto;
+  height: 30rem;
+}
+.selection .selection-card-container .selection-card {
+  border: 0.1rem solid black;
+  border-radius: 2rem;
+  background: #F0CEA0;
+  height: 45rem;
+}
+.selection .selection-card-container .selection-card .vans {
+  width: 20vw;
+  border-bottom: 0.1rem solid #000;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  background: white;
+}
+.selection .selection-card-container .selection-card .pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Urbanist-Bold";
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.selection .selection-card-container .selection-card .pricing p {
+  font-size: 1.2rem;
+}
+.selection .selection-card-container .selection-card .pricing h3,
+.selection .selection-card-container .selection-card .pricing span {
+  font-size: 2.6rem;
+}
+.selection .selection-card-container .selection-card .modalities {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.selection .selection-card-container .selection-card .modalities p {
+  font-size: 1.4rem;
+}
+.selection .selection-card-container .selection-card .availability-white {
+  justify-content: center;
+  width: 20rem;
+  height: 4rem;
+  border-radius: 3rem;
+  border: 0.1rem solid #000;
+  box-shadow: -0.4rem -0.4rem 0 0 rgba(0, 0, 0, 0.25) inset;
+  width: 12rem;
+  background: #FFF;
+  margin: auto;
+  margin-bottom: 0.3rem;
+  width: 20rem;
+}
+.selection .selection-card-container .selection-card .availability-white a {
+  font-family: "Urbanist-Bold";
+  text-decoration: none;
+  color: black;
+  display: flex;
+  font-family: "Urbanist-Bold";
+  justify-content: center;
+  padding-top: 1rem;
+  align-items: center;
+  color: black;
+  font-size: 1.2rem;
+}
+.selection .selection-card-container .book-van-green {
+  justify-content: center;
+  width: 20rem;
+  height: 4rem;
+  border-radius: 3rem;
+  border: 0.1rem solid #000;
+  background: #A9CBA6;
+  box-shadow: -0.4rem -0.4rem 0 0 rgba(0, 0, 0, 0.25) inset;
+  margin: auto;
+  margin-bottom: 0.3rem;
+}
+.selection .selection-card-container .book-van-green a {
+  display: flex;
+  font-family: "Urbanist-Bold";
+  text-decoration: none;
+  color: white;
+  justify-content: center;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+footer {
+  font-size: 1.4rem;
+}
+footer img {
+  margin: auto;
+  display: block;
+  padding: 2rem 0;
+}
+footer nav {
+  display: flex;
+  justify-content: center;
+}
+footer nav a {
+  font-size: 1.4rem;
+}
+footer .social-media {
+  display: flex;
+  justify-content: center;
+}
+footer .imprint {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+}
 
 /*# sourceMappingURL=style.css.map */
