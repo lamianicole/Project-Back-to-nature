@@ -19,6 +19,6 @@ Desktop, mobile Geräte
 
 
 **Vorschau**
-![screenshot](.assets/img/preview-back-to-nature.png)
+![screenshot](./assets/img/preview-back-to-nature.png)
 
 
