@@ -65,6 +65,13 @@ nav a:hover {
   display: flex;
   gap: 1.6rem;
 }
+@media (max-width: 375px) {
+  .intro .img-wrapper .btn-container {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .intro .img-wrapper .btn-container .intro-button {
   display: flex;
   justify-content: center;
@@ -150,6 +157,13 @@ nav a:hover {
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 4rem;
+}
+@media (max-width: 375px) {
+  .card-container {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .card-container .service-card {
   display: flex;
@@ -250,6 +264,13 @@ nav a:hover {
   margin: 0 auto;
   height: 30rem;
 }
+@media (max-width: 375px) {
+  .selection .selection-card-container {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .selection .selection-card-container .selection-card {
   border: 0.1rem solid black;
   border-radius: 2rem;
@@ -349,6 +370,11 @@ footer img {
 footer nav {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 375px) {
+  footer nav {
+    flex-direction: column;
+  }
 }
 footer nav a {
   font-size: 1.4rem;

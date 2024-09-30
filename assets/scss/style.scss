@@ -1,3 +1,5 @@
+@use "./mixin.scss";
+
 @font-face {
     font-family: "Urbanist-Black";
     src: url("../fonts/Urbanist-Black.ttf");
@@ -72,9 +74,14 @@ nav {
         padding-bottom: 7.5rem;
 
         .btn-container {
+            @include mixin.smartphone {
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+              }
             display: flex;
             gap: 1.6rem;
-
+            
             .intro-button {
                 display: flex;
                 justify-content: center;
@@ -166,6 +173,11 @@ nav {
 }
 
 .card-container {
+    @include mixin.smartphone {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+      }
     display: flex;
     width: 90vw;
     gap: 1.6rem;
@@ -275,6 +287,11 @@ nav {
     }
 
     .selection-card-container {
+        @include mixin.smartphone {
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+          }
         display: flex;
         width: 85vw;
         gap: 2.3rem;
@@ -394,6 +411,10 @@ footer {
     nav {
         display: flex;
         justify-content: center;
+
+        @include mixin.smartphone{
+            flex-direction: column;
+        }
 
         a {
             font-size: 1.4rem;
